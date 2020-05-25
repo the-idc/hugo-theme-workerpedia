@@ -6,8 +6,11 @@ This repository contains a theme for [Hugo](https://gohugo.io/), based on the gr
 
 Create a hugo site following their [quick start tutorial](https://gohugo.io/getting-started/quick-start/).
 
+Run the following to bring in this theme.
+
 ```shell
 echo 'theme = "workerpedia"' >> config.toml
+echo '/public' >> .gitignore
 cd themes/
 git clone https://github.com/the-idc/hugo-theme-workerpedia.git workerpedia
 ```
@@ -48,11 +51,11 @@ hugo serve
 ```
 
 ## Add to github
-In github, create a new repository.
+In github, create a new repository. (make sure to fill in `<user>` and `<repo>` below.
 
 ```
 git init
-git commit -m "First commit"
+git commit -am "First commit"
 git remote add origin https://github.com/<user>/<repo>.git
 git push -u origin master
 ```
