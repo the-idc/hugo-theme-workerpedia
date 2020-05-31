@@ -20,7 +20,7 @@
                      {{ if in $page.Params.categories .Page.Title }}active{{ end }}"
             data-nav-id="{{ .Page.Permalink }}">
           <a href="{{ .Page.Permalink }}">
-            {{safeHTML .Page.Params.Pre}}{{or .Page.Params.menuTitle .Page.LinkTitle .Page.Title}}{{safeHTML .Page.Params.Post}}
+            {{safeHTML .Page.Params.Pre}}{{or .Page.Params.menuTitle .Page.LinkTitle .Page.Title | title}}{{safeHTML .Page.Params.Post}}
           </a>
         </li>
       {{ end }}
